@@ -56,4 +56,4 @@ All assets are local; there are no third-party scripts or web fonts.
 
 The primary audience is gym-goers and recreational sports players; leisure and relaxation remain welcome. The service is still one 60-minute full-body massage, not a clinical sports treatment.
 
-`assets/post-workout-massage.jpg` is an AI-generated illustrative massage image, made with the built-in image generation tool. It does not depict actual staff or customers. The generation prompt is recorded in `assets/fitness-image-prompts.txt`.
+`assets/post-workout-massage.jpg` and `assets/post-training-leg-massage.jpg` are AI-generated illustrative massage images, made with the built-in image generation tool. They do not depict actual staff or customers. The generation prompts are recorded in `assets/fitness-image-prompts.txt` and `assets/leg-massage-image-prompt.txt`.
