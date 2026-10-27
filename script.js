@@ -1,7 +1,7 @@
 // One 60-minute full-body massage. Prices are in Indian rupees.
 const massage = {
   name: 'Full-body massage',
-  description: 'A gentle, full-body reset.',
+  description: 'Full-body relaxation for active days.',
   price: 600,
   duration: 60
 };

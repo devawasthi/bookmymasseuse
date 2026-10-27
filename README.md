@@ -21,7 +21,7 @@ Netlify account limits and billing apply to hosting and form submissions. No pai
 
 - **Services and prices:** update `massage.price` in `script.js`, along with the initial fallback prices in `index.html`. The site offers one full-body massage with a fixed 60-minute duration. Prices default to INR. Change the currency formatter if needed.
 - **Business details:** the full-body massage offer is ₹600, displayed against a regular price of ₹1,099, for a 60-minute session. The at-home service wording and preferred time options are example content. The sole service is full-body massage. Replace them with your actual offers. Support is available by call or WhatsApp at +91 6306754280. Set your actual service areas, operating hours and cancellation terms before public launch.
-- **Photos:** replace the local JPGs in `assets/` with your own images if preferred. The three illustrative stock photos come from Unsplash: `photo-1544161515-4ab6ce6db874` (hero), `photo-1519823551278-64ac92734fb1` (hands-on massage), and `photo-1540555700478-4be289fbecef` (towels, lotion and flowers). They do not depict your business. Review the source license for your usage: https://unsplash.com/license.
+- **Photos:** replace the local JPGs in `assets/` with your own images if preferred. The original stock photos come from Unsplash: `photo-1544161515-4ab6ce6db874` (hero), `photo-1519823551278-64ac92734fb1` (hands-on massage), and `photo-1540555700478-4be289fbecef` (towels, lotion and flowers). They do not depict your business. Review the source license for your usage: https://unsplash.com/license.
 - **Branding:** change the logo text in each HTML page. Colors are CSS variables at the top of `styles.css`.
 - **Privacy:** adapt `privacy.html` to your business's actual contact process, data retention and practices; the privacy contact is +91 6306754280.
 
@@ -51,3 +51,9 @@ Open `index.html` in a browser, or run `python3 -m http.server 8796` in this dir
 - `netlify.toml` — static hosting configuration
 
 All assets are local; there are no third-party scripts or web fonts.
+
+## Audience and fitness imagery
+
+The primary audience is gym-goers and recreational sports players; leisure and relaxation remain welcome. The service is still one 60-minute full-body massage, not a clinical sports treatment.
+
+`assets/post-workout-massage.jpg` and `assets/gym-wind-down.jpg` are AI-generated illustrative lifestyle images, made with the built-in image generation tool. They do not depict actual staff or customers. The full generation prompts are recorded in `assets/fitness-image-prompts.txt`.
