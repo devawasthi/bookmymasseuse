@@ -42,3 +42,29 @@
 .confirmation-wait{display:inline-block;background:var(--sage);border:1px solid var(--line);border-radius:6px;padding:12px 16px}
 .legal-page .confirmation-wait{color:var(--green);font-size:14px;margin-top:6px}
 @media(max-width:800px){.booking-summary dd.price-pair{justify-content:flex-start}}
+
+/* Booking review and direct support. */
+.session-caption{font-size:12px;color:var(--muted);margin:-4px 0 20px}
+.booking-help{font-size:11px;line-height:1.8;color:var(--muted);margin-top:18px}
+.booking-help a,.confirmation-contact p a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.review-open{overflow:hidden}
+#booking-review{width:min(560px,calc(100% - 32px));max-height:90vh;max-height:90dvh;padding:30px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);box-shadow:0 24px 90px #182d2640;overflow-y:auto;overscroll-behavior:contain}
+#booking-review::backdrop{background:#182d267a;backdrop-filter:blur(3px)}
+.review-header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.review-close{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);font-size:24px}
+#review-title{font-size:36px;line-height:1.2;letter-spacing:-1px;margin:12px 0}
+#review-intro,.review-note{font-size:12px;color:var(--muted);line-height:1.8}
+.review-details{margin:23px 0;display:grid;gap:12px}
+.review-details>div{display:grid;grid-template-columns:125px minmax(0,1fr);gap:18px;font-size:13px}
+.review-details dt{color:var(--muted)}
+.review-details dd{margin:0;text-align:right;overflow-wrap:anywhere;white-space:pre-wrap}
+.review-details .review-total{border-top:1px solid var(--line);padding-top:20px;margin-top:6px;align-items:center}
+.review-total strong{font-size:26px;font-family:var(--serif);font-weight:400;margin-left:8px}
+.review-actions{display:flex;gap:12px;justify-content:space-between;margin-top:24px}
+.review-actions .button{min-height:48px;font-size:12px}
+.confirmation-contact{border-top:1px solid var(--line);margin:26px 0;padding-top:4px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 30px}
+.legal-page .contact-actions .button{margin-top:8px}
+.site-footer>div{flex-wrap:wrap}
+@media(max-width:800px){.booking-summary dl{display:grid;grid-template-columns:1fr 1fr;gap:18px}.booking-summary dl>div:last-child{grid-column:1/-1}}
+@media(max-width:560px){#booking-review{padding:22px 20px}#review-title{font-size:30px}.review-details>div{grid-template-columns:100px minmax(0,1fr);gap:12px;font-size:12px}.review-actions{flex-direction:column-reverse}.review-actions .button{width:100%}.contact-actions{flex-direction:column}.contact-actions .button{width:100%}}
