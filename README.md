@@ -20,7 +20,7 @@ Netlify account limits and billing apply to hosting and form submissions. No pai
 ## Customize before launch
 
 - **Services and prices:** update `massage.prices` in `script.js`, along with the initial fallback prices in `index.html`. The site offers one full-body massage with 60- and 90-minute durations. Prices default to INR. Change the currency formatter if needed.
-- **Business details:** the full-body massage price is ₹600 for either session length. The at-home service wording and preferred time options are example content. The sole service is full-body massage. Replace them with your actual offers. Add your real contact information, service areas, operating hours and cancellation terms before public launch.
+- **Business details:** the full-body massage offer is ₹600, displayed against a regular price of ₹1,099, for either session length. The at-home service wording and preferred time options are example content. The sole service is full-body massage. Replace them with your actual offers. Add your real contact information, service areas, operating hours and cancellation terms before public launch.
 - **Photos:** replace the local JPGs in `assets/` with your own images if preferred. The three illustrative stock photos come from Unsplash: `photo-1544161515-4ab6ce6db874` (hero), `photo-1519823551278-64ac92734fb1` (hands-on massage), and `photo-1540555700478-4be289fbecef` (towels, lotion and flowers). They do not depict your business. Review the source license for your usage: https://unsplash.com/license.
 - **Branding:** change the logo text in each HTML page. Colors are CSS variables at the top of `styles.css`.
 - **Privacy:** adapt `privacy.html` to your business's actual contact process, data retention and practices; add a privacy contact before launch.
@@ -30,7 +30,7 @@ Netlify account limits and billing apply to hosting and form submissions. No pai
 - The visitor requests a full-body massage and selects a 60/90-minute length, preferred date/time and contact details.
 - JavaScript updates the estimate, blocks past dates and disables elapsed times on the current day (visitor's local timezone). The visitor's selected time is a preference, not an inventory-backed slot.
 - The form submits a URL-encoded request to Netlify Forms, then shows `thank-you.html` after a successful HTTP response. Failed submissions show an error and preserve input for retry.
-- Requests require manual follow-up. The site does not reserve appointments, match therapists, charge cards or send customer confirmations automatically. Netlify notification emails can notify the operator.
+- Requests require manual follow-up. The thank-you page tells customers that the team is checking with an agent and will assign a specialist masseuse, with an estimated 10-minute confirmation time; this is an operational commitment, not an automated assignment or countdown. The site does not reserve appointments, match therapists, charge cards or send customer confirmations automatically. Netlify notification emails can notify the operator.
 - Honeypot spam protection is included. No payment or health information is requested.
 - The estimate sent by the browser is informational and must be verified by the operator before confirming a quote.
 - With JavaScript disabled, the native HTML form still posts to Netlify and uses the custom thank-you page. The visible estimate is the default; the fallback pricing note explains 90-minute pricing.
